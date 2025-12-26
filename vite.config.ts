@@ -18,6 +18,9 @@ export default defineConfig({
 
   build: {
     target: 'es2022',
+    rollupOptions: {
+      external: ['@react-router/cloudflare'],
+    },
   },
   esbuild: {
     target: 'es2022',
