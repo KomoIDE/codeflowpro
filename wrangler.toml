@@ -1,4 +1,9 @@
+name = "codeflow-pro"
+main = "workers/app.ts"
+compatibility_date = "2025-10-08"
+# ... другие настройки Worker
+
 [pages]
-# Указывает Cloudflare Pages, где находятся статические файлы
-# Это переопределит настройку в веб-интерфейсе
-pages_build_output_dir = "build/client"
+# Это заставит Pages использовать этот файл для конфигурации
+# и явно укажет, где находятся статические файлы
+pages_build_output_dir = "build/client" 
