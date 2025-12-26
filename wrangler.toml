@@ -1,0 +1,4 @@
+[pages]
+# Указывает Cloudflare Pages, где находятся статические файлы
+# Это переопределит настройку в веб-интерфейсе
+pages_build_output_dir = "build/client"
