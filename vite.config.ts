@@ -15,9 +15,7 @@ export default defineConfig({
     reactRouter(),
     tsconfigPaths(),
   ],
-  ssr: {
-    external: ['node:async_hooks'],
-  },
+
   build: {
     target: 'es2022',
   },
