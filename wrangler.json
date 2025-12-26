@@ -1,0 +1,20 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "codeflow-pro",
+	"main": "./workers/app.ts",
+	"compatibility_date": "2025-10-08",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"vars": {
+		"VALUE_FROM_CLOUDFLARE": "Hello from CodeFlow Pro!"
+	},
+	"routes": [
+		{
+			"pattern": "codeflow.weloosp.workers.dev/*",
+			"zone_id": "YOUR_ZONE_ID_HERE"
+		}
+	]
+}
